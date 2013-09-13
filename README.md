@@ -9,10 +9,16 @@ Just let see example below :
 <div class="wrap">
 	<div class="row">
 		<div class="zeen-6">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, quas, ipsam, beatae neque consequuntur excepturi placeat facilis delectus distinctio nesciunt quasi vitae odio a voluptatibus nulla reprehenderit molestiae labore non.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+			Corporis, quas, ipsam, beatae neque consequuntur excepturi
+			placeat facilis delectus distinctio nesciunt quasi vitae odio
+			a voluptatibus nulla reprehenderit molestiae labore non.
 		</div>
 		<div class="zeen-6">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus veniam architecto illo labore at aliquid voluptatem unde. Iusto, consequuntur, laudantium, at rem ea ducimus omnis illum hic et ab ad.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+			Delectus veniam architecto illo labore at aliquid voluptatem 
+			unde. Iusto, consequuntur, laudantium, at rem ea ducimus omnis
+			illum hic et ab ad.
 		</div>
 	</div>
 </div>
