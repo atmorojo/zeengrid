@@ -13,8 +13,6 @@ $wrap-width: 960px;
 	width: (($col * $span) + ($jarak * ($span - 1))) * 1%;
 	@extend %col;
 }
-
-
 // Placeholders ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 %row {
 	position: relative;
