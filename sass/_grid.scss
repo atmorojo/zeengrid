@@ -3,24 +3,27 @@
 @import "compass/reset";
 
 // Variables ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-$columns: 12;
 $gutter: 1;
+$columns: 12;
 $wrap-width: 960px;
 
-// Functions & Mixins
-@mixin col($span, $kolom:$columns, $jarak:$gutter) {
+// Functions & Mixins ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+@mixin col($span, $kolom:$columns) {
 	$col: abs(100 - ($kolom - 1) * $gutter) / $kolom;
-	width: (($col * $span) + ($jarak * ($span - 1))) * 1%;
+	width: (($col * $span) + ($gutter * ($span - 1))) * 1%;
 	@extend %col;
 }
 
+@mixin row($width: $wrap-width) {
+	max-width: $width;
+	@extend %row;
+}
 
 // Placeholders ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 %row {
 	position: relative;
 	margin: 0 auto;
 	width: 100%;
-	max-width: $wrap-width;
 	*zoom: 1;
 	&:after {
 		content: "";
@@ -28,7 +31,7 @@ $wrap-width: 960px;
 		clear: both;
 	}
 	& :last-child {
-		margin-right: 0;
+		margin-right: 0 !important;
 	}
 }
 
