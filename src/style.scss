@@ -1,10 +1,10 @@
-@import "grid.scss";
+@import "Grid/grid.scss";
 
 .page-heading {
 	text-align: center;
 	font-size: 2em;
 }
-[class*=zeen], [id*=div] {
+[class*=zeen], [id*=div], [id*=nest] {
 	background: #ddd;
 	@include border-radius(2px);
 	padding: 5px;
@@ -16,10 +16,11 @@
 }
 
 .row {
-	@extend %row;
+	@include row();
 	padding: 0.5em 0;
 }
 
+<<<<<<< HEAD:sass/style.scss
 @for $i from 1 through $columns {
 	.zeen#{$i} {
 		@include col($i)
@@ -41,3 +42,26 @@
 // #div-1 { @include col(1, 3, 1); }
 // #div-2 { @include col(2, 3, 1); }
 // #div-3, #div-4 { @include col(1, 2, 1); }
+=======
+.zeen-1 { @include col(1); }
+.zeen-2 { @include col(2); }
+.zeen-3 { @include col(3); }
+.zeen-4 { @include col(4); }
+.zeen-6 { @include col(6); }
+.zeen-8 { @include col(8); }
+.zeen-10 { @include col(10); }
+.zeen-12 { @include col(12); }
+
+#custom {
+	@include row(860px);
+	padding: 0.5em 0;
+}
+#div-1 { @include col(1, 3); }
+#div-2 { @include col(2, 3); }
+#div-3, #div-4 { @include col(1, 2); }
+
+#nest { 
+	@include col(1, 3);
+	background: #999;
+}
+>>>>>>> 75e9c8ce9373e75629c45d1229a93e978ad0457f:src/style.scss
