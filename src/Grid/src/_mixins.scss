@@ -1,7 +1,6 @@
 // Functions & Mixins ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 @mixin col($span, $kolom:$columns) {
-	$col: abs(100 - ($kolom - 1) * $gutter) / $kolom;
-	width: (($col * $span) + ($gutter * ($span - 1))) * 1%;
+	width: getwidth($kolom, $span);
 	@extend %col;
 }
 
@@ -10,4 +9,6 @@
 	@extend %row;
 }
 
-
+@mixin push($push) {
+	margin-left: push($push);
+}
