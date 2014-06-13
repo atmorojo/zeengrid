@@ -6,6 +6,7 @@ The how to's coming soon :D
 
 ##todo
 * Push and/or pull
+* Tidy up the code
 * Documentation
 * Webfont
 * Mixins

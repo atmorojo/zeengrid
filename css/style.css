@@ -57,13 +57,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   .row :last-child, #custom :last-child {
     margin-right: 0 !important; }
 
-.zeen-1, .zeen-2, .zeen-3, .zeen-4, .zeen-6, .zeen-8, .zeen-10, .zeen-12, #div-1, #div-2, #div-3, #div-4, #nest {
+.zeen-1, .pushed, .zeen-2, .zeen-3, .zeen-4, .pushed-2, .zeen-6, .zeen-8, .zeen-10, .zeen-12, #div-1, #div-2, #div-3, #div-4, #nest {
   float: left;
   display: inline-box;
   min-height: 1px;
   position: relative;
   margin-right: 1%; }
-  .zeen-1 > *, .zeen-2 > *, .zeen-3 > *, .zeen-4 > *, .zeen-6 > *, .zeen-8 > *, .zeen-10 > *, .zeen-12 > *, #div-1 > *, #div-2 > *, #div-3 > *, #div-4 > *, #nest > * {
+  .zeen-1 > *, .pushed > *, .zeen-2 > *, .zeen-3 > *, .zeen-4 > *, .pushed-2 > *, .zeen-6 > *, .zeen-8 > *, .zeen-10 > *, .zeen-12 > *, #div-1 > *, #div-2 > *, #div-3 > *, #div-4 > *, #nest > * {
     padding: 0 0.5em; }
 
 * {
@@ -75,7 +75,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-align: center;
   font-size: 2em; }
 
-[class*=zeen], [id*=div], [id*=nest] {
+[class*=zeen], [id*=div], [id*=nest], [class*=pushed] {
   background: #ddd;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -84,7 +84,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 2px;
   padding: 5px;
   text-align: center; }
-  [class*=zeen]:hover, [id*=div]:hover, [id*=nest]:hover {
+  [class*=zeen]:hover, [id*=div]:hover, [id*=nest]:hover, [class*=pushed]:hover {
     background: #aaa;
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
@@ -95,7 +95,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   max-width: 960px;
   padding: 0.5em 0; }
 
-.zeen-1 {
+.zeen-1, .pushed {
   width: 7.41667%; }
 
 .zeen-2 {
@@ -104,7 +104,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .zeen-3 {
   width: 24.25%; }
 
-.zeen-4 {
+.zeen-4, .pushed-2 {
   width: 32.66667%; }
 
 .zeen-6 {
@@ -135,3 +135,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 #nest {
   width: 32.66667%;
   background: #999; }
+
+.pushed {
+  margin-left: 92.58333%; }
+
+.pushed-2 {
+  margin-left: 58.91667%; }
