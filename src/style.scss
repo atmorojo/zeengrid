@@ -22,9 +22,7 @@
 
 
 @for $i from 1 through $columns {
-	.zeen#{$i} {
-		@include col($i)
-	}
+	.zeen-#{$i} { @include col($i) }
 }
 
 #custom {
@@ -41,11 +39,11 @@
 }
 
 .pushed {
-	@extend .zeen-1;
+	@include col(1);
 	@include push(11);
 }
 
 .pushed-2 {
-	@extend .zeen-4;
+	@include col(4);
 	@include push(7);
 }
