@@ -9,7 +9,7 @@
 		display: table;
 		clear: both;
 	}
-	& :last-child {
+	& >:last-child {
 		margin-right: 0 !important;
 	}
 }
