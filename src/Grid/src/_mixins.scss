@@ -10,5 +10,5 @@
 }
 
 @mixin push($push) {
-	margin-left: push($push);
+	left: push($push);
 }
